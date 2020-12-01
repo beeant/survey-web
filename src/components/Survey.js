@@ -80,7 +80,7 @@ export default ({
         )}
       </Modal>
       <Modal
-        onCancel={() => setModal(false)}
+        onCancel={() => setInviteModal(false)}
         title="Invite by email"
         visible={inviteModal}
         footer={false}

@@ -18,12 +18,25 @@ export default () => {
   const handleSubmit = () => {
     const {
       validateFields,
+      setFields,
     } = formRef.current;
 
     setSubmitting(true);
     validateFields().then(async (values) => {
-      await dispatch(AuthActions.postSignin(values));
+      const result = await dispatch(AuthActions.postSignin(values));
       setSubmitting(false);
+      if (result.error) {
+        const errors = [];
+        Object.keys(result.meta).forEach((key) => {
+          errors.push({
+            value: values[key],
+            errors: [result.meta[key]],
+            name: key,
+          });
+        });
+        setFields(errors);
+        return;
+      }
 
       dispatch(AuthActions.getMe());
       history.push("/");

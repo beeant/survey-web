@@ -6,13 +6,13 @@
 
 ## Screenshot
 
+#### Mobile
+
+<img alt="Survey mobile screenshot" src="https://user-images.githubusercontent.com/162004/100723971-b6b92580-3405-11eb-87f9-e5dd25dd6082.png" width="320px" />
+
 #### Desktop
 
 ![Survey desktop screenshot](https://user-images.githubusercontent.com/162004/100721288-7c01be00-3402-11eb-9454-3bb75c5eaf6e.png)
-
-#### Mobile
-
-<img alt="Survey mobile screenshot" src="https://user-images.githubusercontent.com/162004/100721425-a6ec1200-3402-11eb-8742-4e4195d63244.png" width="320px" />
 
 ## Setup
 

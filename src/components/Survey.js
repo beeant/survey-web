@@ -105,49 +105,47 @@ export default ({
           key={option.id}
         />
       ))}
-      {(audienceAnswer || getMe) && (
-        <div className="ph30 pv10 text-center flex-h">
-          {audienceAnswer && (<Text className="mr5" color="gray">{`${totalAnswers} answers`}</Text>)}
-          <div className="flex-h flex-end flex-1">
-            <div className="mr5">
-              <Button
-                size="s"
-                onClick={() => history.push(`/survey/${survey.id}`)}
-              >
-                Details
-              </Button>
-            </div>
-            {getMe && (
-              <>
-                <div className="mr5">
-                  <Button
-                    size="s"
-                    onClick={() => history.push(`/survey/${survey.id}/update`)}
-                  >
-                    Edit
-                  </Button>
-                </div>
-                <div className="mr5">
-                  <Button
-                    size="s"
-                    onClick={remove}
-                  >
-                    Delete
-                  </Button>
-                </div>
-                <div>
-                  <Button
-                    size="s"
-                    onClick={() => setInviteModal(true)}
-                  >
-                    Dispatch by Email
-                  </Button>
-                </div>
-              </>
-            )}
+      <div className="ph30 pv10 text-center flex-h">
+        {audienceAnswer && (<Text className="mr5" color="gray">{`${totalAnswers} answers`}</Text>)}
+        <div className="flex-h flex-end flex-1">
+          <div className="mr5">
+            <Button
+              size="s"
+              onClick={() => history.push(`/survey/${survey.id}`)}
+            >
+              Details
+            </Button>
           </div>
+          {getMe && (
+            <>
+              <div className="mr5">
+                <Button
+                  size="s"
+                  onClick={() => history.push(`/survey/${survey.id}/update`)}
+                >
+                  Edit
+                </Button>
+              </div>
+              <div className="mr5">
+                <Button
+                  size="s"
+                  onClick={remove}
+                >
+                  Delete
+                </Button>
+              </div>
+              <div>
+                <Button
+                  size="s"
+                  onClick={() => setInviteModal(true)}
+                >
+                  Dispatch by Email
+                </Button>
+              </div>
+            </>
+          )}
         </div>
-      )}
+      </div>
     </SurveyWrapper>
   );
 };

@@ -12,7 +12,7 @@
 
 #### Mobile
 
-![Survey mobile screenshot](https://user-images.githubusercontent.com/162004/100721425-a6ec1200-3402-11eb-8742-4e4195d63244.png)
+<img alt="Survey mobile screenshot" src="https://user-images.githubusercontent.com/162004/100721425-a6ec1200-3402-11eb-8742-4e4195d63244.png" width="320px" />
 
 ## Setup
 

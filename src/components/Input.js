@@ -4,10 +4,10 @@ import {Input, Select as AntSelect} from "antd";
 const style = props => `
   font-family: ${props.theme.fontFamily};
   font-size: 15px;
-  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.15), inset 0 1px 0 0 rgba(0, 0, 0, 0.08);
   background-color: rgba(255, 255, 255, 0.7) !important;
+  box-shadow: none;
   transition: none;
-  border: 1px solid transparent !important;
+  border: 1px solid #CCC !important;
   padding: 7px 14px !important;
   &:focus {
     box-shadow: inset 0 0 0 1px #5426ff, inset 0 1px 0 0 #5426ff !important;
@@ -47,7 +47,7 @@ export const StyledSelect = styled(AntSelect).attrs({
     border: 0;
   }
   .ant-select-selector {
-    box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.15), inset 0 1px 0 0 rgba(0, 0, 0, 0.08);
+    border: 1px solid #CCC !important;
     border: 0 !important;
     min-height: 37px !important;
     height: auto !important;

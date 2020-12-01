@@ -49,7 +49,7 @@ export default ({
 
   const remove = () => {
     Modal.confirm({
-      title: 'Do you want to delete these items?',
+      title: 'Are you sure you want to delete?',
       icon: <ExclamationCircleOutlined />,
       onOk: async () => {
         await dispatch(SurveyActions.deleteSurvey(survey.id));
